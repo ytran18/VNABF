@@ -10,7 +10,7 @@
 }
 
 .first-bg-gradient {
-    background-image: linear-gradient(180deg, rgba(69,69,69,0.15),rgba(131,58,141,0.2));
+    background-image: linear-gradient(rgba(69,69,69,0.15),rgba(131,58,141,0.2));
 }
 
 .second-title-gradient {
@@ -25,7 +25,7 @@
 }
 
 .second-bg-gradient {
-    background-image: linear-gradient(180deg, rgba(69, 69, 69, 0.15),rgba(181, 131, 23, 0.2));
+    background-image: linear-gradient(rgba(69, 69, 69, 0.15),rgba(181, 131, 23, 0.2));
 }
 
 .third-title-gradient {
@@ -36,7 +36,7 @@
 }
 
 .third-bg-gradient {
-    background-image: linear-gradient(180deg, rgba(69, 69, 69, 0.15),rgba(131, 58, 141, 0.2));
+    background-image: linear-gradient(rgba(69, 69, 69, 0.15),rgba(131, 58, 141, 0.2));
 }
 
 .third-btn-gradient {

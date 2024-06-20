@@ -23,6 +23,7 @@ const config: Config = {
       'xl': '1000px',
       'ld': '1035px',
       '2xl': '1280px',
+      '3xl': '1440px'
     }
   },
   plugins: [],
