@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div className="w-screen flex flex-col items-center">
             <div className="w-full relative overflow-hidden h-[336px] flex flex-col items-center bg-gradient-to-b from-[#7715f9] to-[#d63dff]">
-                <div className="w-[1108px] h-[80px] mt-[20px]">
+                <div className="w-full ld:w-[1108px] h-[80px] mt-0 ld:mt-[20px]">
                     <Header />
                     <div className="flex flex-col items-center">
                         <div className="text-[39px] text-[#EFEFF1]">Pricing</div>
@@ -18,17 +18,17 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute z-20">
-                    <Image
-                        src="/icons/header-bg.svg"
-                        alt="header-bg"
-                        className="!max-w-none"
-                        width={2586}
-                        height={490}
-                    />
-                </div>
             </div>
-            <div className="w-full z-10 bg-gradient-to-b from-[#261F49] to-[#0A0517] flex justify-center">
+            <div className="absolute">
+                <Image
+                    src="/icons/header-bg.svg"
+                    alt="header-bg"
+                    className="!max-w-none"
+                    width={2586}
+                    height={490}
+                />
+            </div>
+            <div className="w-full bg-gradient-to-b from-[#261F49] to-[#0A0517] flex justify-center pb-[48px]">
                 <Price />
             </div>
             <div className="w-full bg-[#0A0517] flex justify-center pb-10">

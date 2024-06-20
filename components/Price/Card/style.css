@@ -1,0 +1,26 @@
+.first-card-bg {
+    background-image: linear-gradient(180deg, rgba(66,66,66,0),rgba(112,112,178,0.2));
+}
+
+.first-card-border {
+    border: 1px solid rgba(115, 81, 200, 0.6);
+    border-style: inset;
+}
+
+.second-card-bg {
+    background-image: linear-gradient(180deg, rgba(66,66,66,0),rgba(34,103,46,0.3));
+}
+
+.second-card-border {
+    border: 1px solid rgba(112, 255, 136, 0.3);
+    border-style: inset;
+}
+
+.third-card-bg {
+    background-image: linear-gradient(180deg, rgba(66,66,66,0),rgba(8,124,140,0.3));
+}
+
+.third-card-border {
+    border: 1px solid rgba(117, 239, 255, 0.4);
+    border-style: inset;
+}

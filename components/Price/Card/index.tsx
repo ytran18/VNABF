@@ -1,24 +1,21 @@
 import Image from "next/image";
 
+import './style.css';
+
 interface CardProps {
-    gradientFrom: string;
-    gradientTo: string;
-    border: string;
-    borderOpacity: string;
     feature: Array<string>;
     type: string;
     typeColor: string;
+    classNameBgGradient: string;
+    classNameBorderGradient: string;
 }
 
 const Card = (props: CardProps) => {
 
-    const { gradientFrom, gradientTo, border, borderOpacity, feature, type, typeColor } = props;
-
-    const bgGradient = `from-[${gradientFrom}] to-[${gradientTo}]`;
-    const borderRender = `border-[${border}] border-opacity-[${borderOpacity}]`
+    const { feature, type, typeColor, classNameBgGradient, classNameBorderGradient } = props;
 
     return (
-        <div className={`w-full lg:w-[302px] z-30 p-[36px] lg:p-[16px] h-[545px] text-white bg-gradient-to-b ${bgGradient} border ${borderRender} rounded-[20px] flex flex-col items-center justify-between`}>
+        <div className={`w-full z-10 lg:w-[302px] p-[36px] lg:p-[16px] h-[545px] text-white bg-gradient-to-b ${classNameBgGradient} border ${classNameBorderGradient} rounded-[20px] flex flex-col items-center justify-between`}>
             <div className="w-full flex flex-col items-start lg:items-center">
                 <div
                     className="text-[23px]"

@@ -31,7 +31,7 @@ const ContactCard = (props: ContactCardProps) => {
                     {note}
                 </div>
             </div>
-            <div className={`h-[48px] w-full md:min-w-[248px] md:w-[248px] ${classBtnGradient} rounded-lg text-sm font-semibold flex items-center justify-center`}>
+            <div className={`h-[48px] cursor-pointer w-full md:min-w-[248px] md:w-[248px] ${classBtnGradient} rounded-lg text-sm font-semibold flex items-center justify-center`}>
                 Contact sales
             </div>
         </div>
