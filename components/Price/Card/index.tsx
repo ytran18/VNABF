@@ -32,7 +32,7 @@ const Card = (props: CardProps) => {
                         <div className={`${type === 'Starter' ? 'text-[16px]' : 'text-xs opacity-55'}`}>{type !== 'Starter' ? 'billed monthly' : 'and guests'}</div>
                     </div>
                 </div>
-                <div className="mt-[26px] flex flex-col gap-[10px]">
+                <div className={`${type === 'Starter' ? 'mt-[18px]' : 'mt-[26px]'} flex flex-col gap-[10px]`}>
                     {feature.map((item, index) => {
                         return (
                             <div
