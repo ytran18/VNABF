@@ -3,7 +3,7 @@ import Image from "next/image";
 const Header = () => {
     return (
         <div
-            className="w-full h-full shadow-xl drop-shadow-xl border-white border border-opacity-10 text-white flex items-center justify-between px-[40px] mb-[30px] rounded-br-[20px] rounded-bl-[20px] ld:rounded-[20px]"
+            className="w-full h-full relative z-10 shadow-xl drop-shadow-xl border-white border border-opacity-10 text-white flex items-center justify-between px-[40px] mb-[30px] rounded-br-[20px] rounded-bl-[20px] ld:rounded-[20px]"
         >
             <div className="items-center gap-[40px] hidden ld:flex text-sm">
                 <div className="cursor-pointer">Gallery</div>
