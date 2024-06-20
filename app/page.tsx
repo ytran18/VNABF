@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
     return (
         <div className="w-screen flex flex-col items-center">
-            <div className="w-full h-[336px] flex flex-col items-center bg-gradient-to-b from-[#7715f9] to-[#d63dff] z-10">
+            <div className="w-full relative overflow-hidden h-[336px] flex flex-col items-center bg-gradient-to-b from-[#7715f9] to-[#d63dff]">
                 <div className="w-[1108px] h-[80px] mt-[20px]">
                     <Header />
                     <div className="flex flex-col items-center">
@@ -18,7 +18,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute">
+                <div className="absolute z-20">
                     <Image
                         src="/icons/header-bg.svg"
                         alt="header-bg"
@@ -28,7 +28,7 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="w-full bg-gradient-to-b from-[#261F49] to-[#0A0517] flex justify-center">
+            <div className="w-full z-10 bg-gradient-to-b from-[#261F49] to-[#0A0517] flex justify-center">
                 <Price />
             </div>
             <div className="w-full bg-[#0A0517] flex justify-center pb-10">

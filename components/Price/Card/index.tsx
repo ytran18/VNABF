@@ -18,20 +18,22 @@ const Card = (props: CardProps) => {
     const borderRender = `border-[${border}] border-opacity-[${borderOpacity}]`
 
     return (
-        <div className={`w-[302px] z-20 p-[16px] h-[545px] text-white bg-gradient-to-b ${bgGradient} border ${borderRender} rounded-[20px] flex flex-col items-center justify-between`}>
-            <div className="flex flex-col items-center">
+        <div className={`w-full lg:w-[302px] z-30 p-[36px] lg:p-[16px] h-[545px] text-white bg-gradient-to-b ${bgGradient} border ${borderRender} rounded-[20px] flex flex-col items-center justify-between`}>
+            <div className="w-full flex flex-col items-start lg:items-center">
                 <div
-                    className="text-[19px]"
+                    className="text-[23px]"
                     style={{
                         color: `${typeColor}`
                     }}
                 >
                     {type}
                 </div>
-                <div className="text-[51px] mt-[26px]">Free</div>
-                <div className="">
-                    <div className="text-[16px]">{type === 'Starter' ? 'Unlimited users' : 'per user/month'}</div>
-                    <div className={`${type === 'Starter' ? 'text-[16px]' : 'text-xs opacity-55'}`}>{type !== 'Starter' ? 'billed monthly' : 'and guests'}</div>
+                <div className="flex flex-row gap-[24px] lg:gap-0 lg:flex-col items-center mt-[26px]">
+                    <div className="text-[51px]">Free</div>
+                    <div className="">
+                        <div className="text-[16px]">{type === 'Starter' ? 'Unlimited users' : 'per user/month'}</div>
+                        <div className={`${type === 'Starter' ? 'text-[16px]' : 'text-xs opacity-55'}`}>{type !== 'Starter' ? 'billed monthly' : 'and guests'}</div>
+                    </div>
                 </div>
                 <div className="mt-[26px] flex flex-col gap-[10px]">
                     {feature.map((item, index) => {

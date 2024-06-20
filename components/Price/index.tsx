@@ -3,7 +3,7 @@ import Card from "./Card";
 const Price = () => {
     return (
         <div
-            className="w-[940px] max-w-[940px] py-[30px] flex items-center justify-between"
+            className="w-[940px] mx-[20px] lg:mx-0 z-0 max-w-[940px] py-[30px] flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-between"
         >
             <Card
                 gradientFrom="rgba(66,66,66,0)"

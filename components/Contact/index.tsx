@@ -2,7 +2,7 @@ import ContactCard from "./ContactCard";
 
 const Contact = () => {
     return (
-        <div className="w-[940px] max-w-[940px] flex flex-col gap-[48px]">
+        <div className="w-[940px] mx-[20px] lg:mx-0 max-w-[940px] flex flex-col gap-[48px]">
             <ContactCard
                 note=""
                 title="Are you a startup?"

@@ -18,20 +18,20 @@ const ContactCard = (props: ContactCardProps) => {
             style={{
                 borderStyle: 'inset'
             }}
-            className={`w-full h-fit rounded-[20px] ${classBgGradient} border border-[#6168FA] border-opacity-40 flex items-center justify-between p-[24px]`}
+            className={`w-full h-fit rounded-[20px] ${classBgGradient} border border-[#6168FA] border-opacity-40 flex flex-col md:flex-row items-center justify-between p-[24px]`}
         >
-            <div className="flex flex-col">
+            <div className="w-full md:w-autoflex flex-col">
                 <div className={`text-[31px] font-light ${classTextGradient}`}>
                     {title}
                 </div>
                 <div className="text-white text-[16px] mt-3">
                     {description}
                 </div>
-                <div className='text-white text-[16px] mt-[27px]'>
+                <div className='text-white text-[16px] mb-[36px] mt-[36px] md:mb-0'>
                     {note}
                 </div>
             </div>
-            <div className={`h-[48px] min-w-[248px] w-[248px] ${classBtnGradient} rounded-lg text-sm font-semibold flex items-center justify-center`}>
+            <div className={`h-[48px] w-full md:min-w-[248px] md:w-[248px] ${classBtnGradient} rounded-lg text-sm font-semibold flex items-center justify-center`}>
                 Contact sales
             </div>
         </div>
